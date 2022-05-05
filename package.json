@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/NitishNaskar/Authentication#readme",
   "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^3.1.7",
     "express": "^4.17.3"
   }
 }
