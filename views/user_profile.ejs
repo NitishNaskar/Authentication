@@ -8,8 +8,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <h2>User Profile</h2>
-    <p> Name : <%= user.name %></p>
-    <p> Email : <%= user.email %></p>
+    <form action="/uesr/commect" id="create-comment" method="post">
+        <input type="text" name="username" >
+        <br><br>
+        <input type="text" name="commect">
+        <br><br>
+        <input type="submit">
+    </form>
+    <script src="/js/user_profile.js"></script>
 </body>
 </html>

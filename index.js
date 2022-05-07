@@ -1,6 +1,8 @@
 const express = require("express");
 const app=express();
 const port=8000;
+const db=require("./config/mongoose");
+
 
 // set view engine
 app.set("view engine","ejs");
