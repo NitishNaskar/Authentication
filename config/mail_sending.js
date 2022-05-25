@@ -3,7 +3,7 @@ const ejs=require("ejs");
 const path= require("path");
 
 let transporter = nodemailer.createTransport({
-  service: "gmail",
+    service: "gmail",
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
@@ -20,7 +20,7 @@ let renderTemplate=(data,relativePath)=>{
     data,
     function(err,template){
       if(err){
-        console.log("Error in render ");
+        console.log("Error in render ",err);
         return;
       }
       mailHTML=template;
